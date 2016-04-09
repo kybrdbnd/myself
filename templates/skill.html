@@ -80,21 +80,25 @@
         });
     </script>
     <script>
+     $(document).scroll(function () {
         $('#english_circle').circleProgress({
             startAngle: -Math.PI / 4 * 2,
             size: 150,
             value: .75,
             lineCap: 'round',
             fill: {color: '#5BC0DE'}
-        });
+            });
+         });
     </script>
     <script>
+      $(document).scroll(function () {
         $('#german_circle').circleProgress({
             startAngle: -Math.PI / 4 * 2,
             size: 150,
             value: .36,
             lineCap: 'round',
             fill: {color: '#5BC0DE'}
+            });
         });
     </script>
 {% endblock %}

@@ -5,19 +5,7 @@ from .forms import ContactForm
 
 # Create your views here.
 def home(request):
-    if request.method == 'POST':
-        # create a form instance and populate it with data from the request:
-        form = ContactForm(request.POST)
-        # check whether it's valid:
-        if form.is_valid():
-            # process the data in form.cleaned_data as required
-            for key, value in form.cleaned_data.items():
-                print(key, value)
-                # redirect to a new URL:
-    # if a GET (or any other method) we'll create a blank form
-    else:
-        form = ContactForm()
-    return render(request, 'home.html', {'form': form})
+    return render(request, 'home.html',{})
 
 
 def about(request):
@@ -32,8 +20,8 @@ def education(request):
     return render(request, 'education.html', {})
 
 
-def projects(request):
-    return render(request, 'project.html', {})
+def work(request):
+    return render(request, 'work.html', {})
 
 
 def blog(request):
@@ -41,4 +29,16 @@ def blog(request):
 
 
 def contact(request):
-    return render(request, 'contact.html', {})
+    if request.method == 'POST':
+        # create a form instance and populate it with data from the request:
+        form = ContactForm(request.POST)
+        # check whether it's valid:
+        if form.is_valid():
+            # process the data in form.cleaned_data as required
+            for key, value in form.cleaned_data.items():
+                print(key, value)
+                # redirect to a new URL:
+    # if a GET (or any other method) we'll create a blank form
+    else:
+        form = ContactForm()
+    return render(request, 'contact.html', {'form': form})
