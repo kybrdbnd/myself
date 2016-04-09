@@ -1,0 +1,68 @@
+/*base page */
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.social-icon {
+    border-radius: 100%;
+    display: inline-block;
+    color: white;
+    font-size: 16px;
+    height: 42px;
+    line-height: 42px;
+    margin: 0 4px;
+    text-align: center;
+    width: 42px;
+}
+
+/*footer*/
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+/*home page*/
+.clearfix{
+    margin: 75px;
+}
+.profile-pic{
+    margin-top: 20px;
+    margin-left: -50px;
+}
+sup {
+    top: -0.5em;
+    font-size: 75%;
+}
+
+/*about page */
+#about_me{
+    height: 150px;
+    width: 200px;
+}
+
+.about-details{
+    line-height: 30px;
+}
+
+
+/*skill page*/
+
+.progress-bar span {
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    color: #000;
+    display: block;
+    font-weight: 400;
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    right: -20px;
+    text-align: center;
+    top: -16px;
+    width: 40px;
+}

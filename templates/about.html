@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block head_title %}About{% endblock %}
+{% block content %}
+    <br>
+    <div class="row">
+        <div class="col s12 center">
+            <h5>ABOUT ME</h5>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="container">
+
+        <div class="row">
+            <div class="col m2">
+                <img src="{% static 'img/pranav.jpg' %}" alt="" class="circle responsive-img" id="about_me">
+            </div>
+            <div class="col m10">
+                <h5><strong>PRANAV PURI</strong></h5>
+                <h6><strong>WEB & UI DESIGNER</strong></h6>
+
+                <div class="about-para">
+                    <p>
+                        This is gonna to be awesome
+                    </p>
+                </div>
+                <div class="about-details">
+                    <p class="grey-text">
+
+                        <strong>Date Of Birth:</strong> 11 May 1995 <br>
+                        <strong>Phone:</strong> +91 - 8860270019 <br>
+                        <strong>Email:</strong> pranavpuri.p@hotmail.com <br>
+                        <strong>Address:</strong>RZ-6, II<sup>nd</sup> Floor, Indra Park, Uttam Nagar, Near Tilak Pul,
+                        New Delhi-110059 <br>
+                        <strong>Website:</strong> www.kybrdbnd.in <br>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col m2">
+                {#                <p></p>#}
+            </div>
+            <div class="col m10">
+                <h5><strong>WHAT I'M DOING</strong></h5>
+            </div>
+            <div class="col m4 s12 center">
+                <div class="card-panel">
+                    <i class="fa fa-desktop fa-5x"></i>
+                    <br>
+
+                    <p><strong>WEB & UX DESIGN</strong></p>
+                </div>
+            </div>
+            <div class="col m4 s12 center">
+                <div class="card-panel">
+                    <i class="fa fa-terminal fa-5x"></i>
+                    <br>
+
+                    <p><strong>CODING</strong></p>
+                </div>
+            </div>
+            <div class="col m4 s12 center">
+                <div class="card-panel">
+                    <i class="fa fa-graduation-cap fa-5x"></i>
+                    <br>
+
+                    <p><strong>STUDYING</strong></p>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+{% endblock %}

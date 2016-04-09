@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block head_title %}Skills{% endblock %}
+{% block content %}
+    <div class="container">
+        <br>
+        <h4>MY SKILL VALUES</h4>
+
+        <div class="row">
+            <div class="col m6 s12">
+                <h5>TECHNICAL SKILLS</h5>
+
+                <p>Python</p>
+
+                <div class="progress">
+                    <div class="progress-bar progress-bar-info" role="progressbar" data-transitiongoal="75"></div>
+                    <span>75%</span>
+                </div>
+                <p>DJANGO</p>
+
+                <div class="progress">
+                    <div class="progress-bar progress-bar-info" role="progressbar" data-transitiongoal="40"></div>
+                    <span>40%</span>
+                </div>
+                <p>PHOTOSHOP</p>
+
+                <div class="progress">
+                    <div class="progress-bar progress-bar-info" role="progressbar" data-transitiongoal="85"></div>
+                    <span>85%</span>
+                </div>
+                <p>HTML AND CSS</p>
+
+                <div class="progress">
+                    <div class="progress-bar progress-bar-info" role="progressbar" data-transitiongoal="80"></div>
+                    <span>80%</span>
+                </div>
+
+            </div>
+            <div class="col m6 s12">
+                <h5>KNOWLEDGE</h5>
+
+                <div class="col m6 s12">
+                    <ul>
+                        <li><i class="fa fa-arrow-right"></i>INSTALL AND CONFIGURE</li>
+                        <li><i class="fa fa-arrow-right"></i>WEB USABILTIY</li>
+                        <li><i class="fa fa-arrow-right"></i>GRID AND LAYOUT</li>
+                        <li><i class="fa fa-arrow-right"></i>GRAPHICAL DESIGN</li>
+                    </ul>
+                </div>
+                <div class="col m6 s12">
+                    <ul>
+                        <li><i class="fa fa-arrow-right"></i>UI AND UX DESIGN</li>
+                        <li><i class="fa fa-arrow-right"></i>LOGO DESIGN</li>
+                        <li><i class="fa fa-arrow-right"></i>WEB DEVELOPEMENT</li>
+                        <li><i class="fa fa-arrow-right"></i>SOFTWARE DEVELOPEMENT</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <h4>LANGUAGE SKILLS</h4>
+
+        <div class="row">
+            <div class="col m6 s12 center">
+                <p>ENGLISH EXPERIENCED</p>
+
+                <div id="english_circle"></div>
+            </div>
+            <div class="col m6 s12 center">
+                <p>GERMAN BASIC</p>
+
+                <div id="german_circle"></div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block extra_js %}
+    <script>
+        $(document).ready(function () {
+            $('.progress .progress-bar').progressbar({display_text: 'fill'});
+        });
+    </script>
+    <script>
+        $('#english_circle').circleProgress({
+            startAngle: -Math.PI / 4 * 2,
+            size: 150,
+            value: .75,
+            lineCap: 'round',
+            fill: {color: '#5BC0DE'}
+        });
+    </script>
+    <script>
+        $('#german_circle').circleProgress({
+            startAngle: -Math.PI / 4 * 2,
+            size: 150,
+            value: .36,
+            lineCap: 'round',
+            fill: {color: '#5BC0DE'}
+        });
+    </script>
+{% endblock %}

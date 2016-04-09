@@ -1,62 +1,38 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
+{% block head_title %}Home{% endblock %}
 {% block content %}
     <div class="container">
-        <h2>About Me</h2>
+        <div class="clearfix"></div>
 
         <div class="row">
-            <div class="col s12 m5">
-                <div class="card hoverable">
-                    <div class="card-image">
-                        <img src="{% static 'img/pp.jpg' %}">
-                    </div>
+            <div class="col s12 m4">
+                <div class="profile-pic">
+                    <img src="{% static 'img/pp.jpg' %}" class="hoverable" height="75%" width="75%">
                 </div>
             </div>
-            <div class="col s12 m7">
-                Short Desciption sdkjbskddbs
-                skdjbksvdbksbv
-                xdvlknxvl
+            <div class="col s12 m8">
+                <h3>DESIGN<sup>+</sup> DEVELOP<sup>+</sup> <br>INTERACTIVE<sup>+</sup> ART<sup>+</sup></h3>
+                Hello, I'm Pranav Puri. I Have 2 years of experience in Web and UX design. <br> I am currently doing
+                bachelors in Computer Science Engineering from SRM University.
                 <div class="row">
-                    <div class="col m6 s12 center">
-                        <a class="waves-effect waves-light btn">
-                            <i class="fa fa-cloud"></i>
-                            Download CV
-                        </a>
+                    <div class="col m6 s12">
+                        <p>
+                            <a class="waves-effect waves-light btn">
+                                Download CV
+                            </a>
+                        </p>
                     </div>
                     <div class="col m6 s12 center">
-
-                        <!-- Modal Trigger -->
-                        <a class="waves-effect waves-light btn modal-trigger" href="#modal1">
-                            <i class="fa fa-cloud"></i>
-                            Contact
-                        </a>
-                        <!-- Modal Structure -->
-                        <div id="modal1" class="modal">
-                            <div class="modal-content">
-                                <form action="" method="post">
-                                    {% csrf_token %}
-                                    {{ form }}
-                                    <input type="submit" value="Submit"/>
-                                </form>
-                            </div>
-                            <div class="modal-footer">
-                                <a href="#!"
-                                   class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-                            </div>
-                        </div>
-
+                        <p>
+                            <a class="waves-effect waves-light btn">
+                                Hire Me Now
+                            </a>
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    {% block extra_js %}
-        <script>
-            $(document).ready(function () {
-                // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-                $('.modal-trigger').leanModal();
-            });
-        </script>
-    {% endblock %}
-
+    <div class="clearfix"></div>
 {% endblock %}

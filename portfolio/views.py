@@ -1,3 +1,4 @@
+from __future__ import unicode_literals
 from django.shortcuts import render
 from .forms import ContactForm
 
@@ -17,3 +18,27 @@ def home(request):
     else:
         form = ContactForm()
     return render(request, 'home.html', {'form': form})
+
+
+def about(request):
+    return render(request, 'about.html', {})
+
+
+def skill(request):
+    return render(request, 'skill.html', {})
+
+
+def education(request):
+    return render(request, 'education.html', {})
+
+
+def projects(request):
+    return render(request, 'project.html', {})
+
+
+def blog(request):
+    return render(request, 'blog.html', {})
+
+
+def contact(request):
+    return render(request, 'contact.html', {})
