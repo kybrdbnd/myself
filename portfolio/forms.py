@@ -9,3 +9,12 @@ class ContactForm(forms.Form):
         required=True, error_messages={'required': 'Please enter your email id'})
     message = forms.CharField(
         required=True, error_messages={'required': 'Please enter your message'})
+
+
+class HireForm(forms.Form):
+    full_name = forms.CharField(
+        required=True, error_messages={'required': 'Please enter your name'})
+    email = forms.EmailField(
+        required=True, error_messages={'required': 'Please enter your email id'})
+    message = forms.CharField(
+        required=True, error_messages={'required': 'Please enter your message'})

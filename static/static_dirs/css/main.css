@@ -66,3 +66,11 @@ sup {
     top: -16px;
     width: 40px;
 }
+
+
+/*education page*/
+.card-panel :nth-child(2n) {
+    /*position: absolute;*/
+    top: -50px;
+    /*bottom: -132px;*/
+}

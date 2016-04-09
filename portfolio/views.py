@@ -1,11 +1,24 @@
 from __future__ import unicode_literals
 from django.shortcuts import render
-from .forms import ContactForm
+from .forms import ContactForm, HireForm
 
 
 # Create your views here.
 def home(request):
-    return render(request, 'home.html',{})
+    if request.method == 'POST':
+        # create a form instance and populate it with data from the request:
+        form = HireForm(request.POST)
+        # check whether it's valid:
+        if form.is_valid():
+            # process the data in form.cleaned_data as required
+            for key, value in form.cleaned_data.items():
+                print(key, value)
+                # redirect to a new URL:
+        # if a GET (or any other method) we'll create a blank form
+    else:
+        form = HireForm()
+
+    return render(request, 'home.html', {'form': form})
 
 
 def about(request):
