@@ -87,22 +87,30 @@ sup {
 }
 
 
-
 /*skill page*/
+.list-icons{
+    line-height: 50px;
+}
 
-.progress-bar span {
-    background: #fff none repeat scroll 0 0;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
-    color: #000;
-    display: block;
-    font-weight: 400;
-    height: 40px;
-    line-height: 40px;
-    position: absolute;
-    right: -20px;
-    text-align: center;
-    top: -16px;
-    width: 40px;
+.list-icons > li > i {
+    color: #7e50ff;
+    padding-right: 10px;
+}
+
+.list-icons > li {
+    color: #232323;
+}
+
+#english_circle strong {
+    font-size: 30px;
+}
+
+#german_circle strong {
+    font-size: 30px;
+}
+
+.progress-bar-info {
+    background-color: #7e57c2 !important;
 }
 
 

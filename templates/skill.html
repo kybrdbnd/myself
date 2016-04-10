@@ -5,9 +5,10 @@
     <div class="container">
         <br>
         <h4>MY SKILL VALUES</h4>
+        <div class="clearfix"></div>
 
         <div class="row">
-            <div class="col m6 s12">
+            <div class="col m5 s12">
                 <h5>TECHNICAL SKILLS</h5>
 
                 <p>Python</p>
@@ -36,11 +37,11 @@
                 </div>
 
             </div>
-            <div class="col m6 s12">
+            <div class="col m7 s12">
                 <h5>KNOWLEDGE</h5>
 
                 <div class="col m6 s12">
-                    <ul>
+                    <ul class="list-icons">
                         <li><i class="fa fa-arrow-right"></i>INSTALL AND CONFIGURE</li>
                         <li><i class="fa fa-arrow-right"></i>WEB USABILTIY</li>
                         <li><i class="fa fa-arrow-right"></i>GRID AND LAYOUT</li>
@@ -48,7 +49,7 @@
                     </ul>
                 </div>
                 <div class="col m6 s12">
-                    <ul>
+                    <ul class="list-icons">
                         <li><i class="fa fa-arrow-right"></i>UI AND UX DESIGN</li>
                         <li><i class="fa fa-arrow-right"></i>LOGO DESIGN</li>
                         <li><i class="fa fa-arrow-right"></i>WEB DEVELOPEMENT</li>
@@ -60,15 +61,18 @@
         <h4>LANGUAGE SKILLS</h4>
 
         <div class="row">
-            <div class="col m6 s12 center">
+            <div class="col m6 s12">
                 <p>ENGLISH EXPERIENCED</p>
-
-                <div id="english_circle"></div>
+                <div id="english_circle">
+                    <strong>75%</strong>
+                </div>
             </div>
-            <div class="col m6 s12 center">
+            <div class="col m6 s12">
                 <p>GERMAN BASIC</p>
-
-                <div id="german_circle"></div>
+                <div id="german_circle">
+                    <strong>36%</strong>
+                </div>
+                
             </div>
         </div>
     </div>
@@ -81,12 +85,13 @@
     </script>
     <script>
      $(document).scroll(function () {
+       
         $('#english_circle').circleProgress({
             startAngle: -Math.PI / 4 * 2,
             size: 150,
             value: .75,
             lineCap: 'round',
-            fill: {color: '#5BC0DE'}
+            fill: {color: '#7e57c2 '}
             });
          });
     </script>
@@ -97,7 +102,7 @@
             size: 150,
             value: .36,
             lineCap: 'round',
-            fill: {color: '#5BC0DE'}
+            fill: {color: '#7e57c2'}
             });
         });
     </script>
