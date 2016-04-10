@@ -1,70 +1,116 @@
-{% extends 'base.html' %}
-{% load staticfiles %}
-{% block head_title %}Contact{% endblock %}
-{% block content %}
+{% extends 'base.html' %} {% load staticfiles %} {% block head_title %}Contact{% endblock %} {% block content %}
     <div class="container">
         <br>
-        <h4>GET IN TOUCH WITH ME</h4>
-
+        <h5>GET IN TOUCH WITH ME</h5>
+        {% block template_messages %}
+            {% if messages %}
+                <ul class="messages">
+                    {% for message in messages %}
+                        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>
+                            {% block message_js %}
+                                <h4>{{ message }}</h4>
+                            {% endblock %}
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        {% endblock %}
         <div class="clearfix"></div>
         <div class="row">
             <div class="col m5 s12">
                 <h5>CONTACT ADDRESS</h5>
-                <ul>
-                    <li><i class="material-icons">location_on</i>RZ-6, II<sup>ND</sup> FLOOR, INDRA PARK <br> UTTAM
-                        NAGAR
-                        NEAR TILAK PUL
+                <ul class="list-icons list-unstyled">
+                    <li><i class="material-icons">location_on</i>RZ-6, II<sup>ND</sup> FLOOR, INDRA PARK UTTAM NAGAR
+                        NEAR TILAK PUL, New Delh - 110059
                     </li>
                     <li><i class="material-icons">phone_iphone</i>Phone: +91-8860270019</li>
                     <li><i class="material-icons">email</i>Email: pranavpuri.p@hotmail.com</li>
                     <li><i class="material-icons">home</i>Website: www.kybrdbnd.in</li>
                 </ul>
+                <div class="col m12">
+                    <div class="social-icons-2">
+                        <a class="social-icon-2" href="https://www.facebook.com/profile.php?id=100004364520915"
+                           target="__blank"><i class="fa fa-facebook"></i></a>
+                        <a class="social-icon-2" href="https://www.facebook.com/profile.php?id=100004364520915"
+                           target="__blank"><i class="fa fa-twitter"></i></a>
+                        <a class="social-icon-2" href="https://plus.google.com/u/0/+PranavPurikybrdbnd"
+                           target="__blank"><i class="fa fa-google-plus"></i></a>
+                        <a class="social-icon-2" href="https://github.com/kybrdbnd" target="__blank"><i
+                                class="fa fa-github"></i></a>
+                    </div>
+                </div>
             </div>
             <div class="col m7 s12">
                 <h5>CONTACT FORM</h5>
 
                 <form action="" method="post">{% csrf_token %}
-                    <div class="input-field col m6">
-                        <i class="material-icons prefix">account_circle</i>
-                        {{ form.full_name }}
-                        <label for="full_name">First Name</label>
-                        {% if form.full_name.errors %}
-                            {% for error in form.full_name.errors %}
-                                <li>{{ error|escape }}</li>
-                            {% endfor %}
-                        {% endif %}
-
+                    <div class="input-field col m12 s12">
+                        <i class="material-icons prefix">account_circle</i> {{ form.full_name }}
+                        <label for="full_name">Full Name</label>
+                        {% if form.full_name.errors %} {% for error in form.full_name.errors %}
+                            <li>{{ error|escape }}</li>
+                        {% endfor %} {% endif %}
                     </div>
-                    <div class="input-field col m6">
-                        <i class="material-icons prefix">phone</i>
-                        <label for="phone">Phone</label>
-                        {{ form.phone }}
-                    </div>
-                    <div class="input-field col m12">
+                    <div class="input-field col m12 s12">
                         <i class="material-icons prefix">email</i>
                         <label for="email">Email</label>
-                        {{ form.email }}
-                        {% if form.email.errors %}
-                            {% for error in form.email.errors %}
-                                <li>{{ error|escape }}</li>
-                            {% endfor %}
-                        {% endif %}
+                        {{ form.email }} {% if form.email.errors %} {% for error in form.email.errors %}
+                        <li>{{ error|escape }}</li>
+                    {% endfor %} {% endif %}
                     </div>
-                    <div class="input-field col m12">
-                        <i class="material-icons prefix">mode_edit</i>
+                    <div class="input-field col m12 s12">
+                        <i class="material-icons prefix">mode_edit</i> {{ form.message }}
                         <label for="message">Message</label>
-                        {{ form.message }}
-                        {% if form.message.errors %}
-                            {% for error in form.message.errors %}
-                                <li>{{ error|escape }}</li>
-                            {% endfor %}
-                        {% endif %}
+                        {% if form.message.errors %} {% for error in form.message.errors %}
+                            <li>{{ error|escape }}</li>
+                        {% endfor %} {% endif %}
                     </div>
-                    <button class="btn waves-effect waves-light" type="submit" name="action">SEND MESSAGE
-                        <i class="material-icons right">send</i>
-                    </button>
+                    <div class="col m12 s12 center">
+                        <button class="deep-purple lighten-1 btn waves-effect waves-light" type="submit" name="action">
+                            SEND MESSAGE
+                            <i class="material-icons right">send</i>
+                        </button>
+                    </div>
                 </form>
             </div>
         </div>
+        <div class="row">
+            <div class="col m12 s12">
+                <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+                <div class="card-panel">
+                    <div style='overflow:hidden;height:100%;width:100%;'>
+                        <div id='gmap_canvas' style='height:440px;width:1000px;'></div>
+                        <style>
+                            #gmap_canvas img {
+                                max-width: none !important;
+                                background: none !important
+                            }
+                        </style>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type='text/javascript'>
+            function init_map() {
+                var myOptions = {
+                    zoom: 15,
+                    center: new google.maps.LatLng(28.6208846, 77.06831869999996),
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                };
+                map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+                marker = new google.maps.Marker({
+                    map: map,
+                    position: new google.maps.LatLng(28.6208846, 77.06831869999996)
+                });
+                infowindow = new google.maps.InfoWindow({
+                    content: '<strong>Home</strong><br>RZ-6, IInd Floor, Indra Park, Uttam Nagar, New Delhi-110059<br>'
+                });
+                google.maps.event.addListener(marker, 'click', function () {
+                    infowindow.open(map, marker);
+                });
+                infowindow.open(map, marker);
+            }
+            google.maps.event.addDomListener(window, 'load', init_map);
+        </script>
     </div>
 {% endblock %}

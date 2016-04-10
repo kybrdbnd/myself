@@ -1,74 +1,103 @@
-{% extends 'base.html' %}
-{% load staticfiles %}
-{% block head_title %}About{% endblock %}
-{% block content %}
-   
-    <div class="container">
+{% extends 'base.html' %} {% load staticfiles %} {% block head_title %}About{% endblock %} {% block content %}
+<div class="container">
     <br>
     <h5>ABOUT ME</h5>
     <div class="clearfix"></div>
-        <div class="row">
-            <div class="col m3">
+    <div class="row">
+        <div class="col m4">
             <div class="card-panel center">
                 <img src="{% static 'img/pranav.jpg' %}" alt="" height="300px;">
             </div>
+        </div>
+        <div class="col m8">
+            <h5><strong>PRANAV PURI</strong></h5>
+            <h6><strong>WEB & UI/UX DESIGNER</strong></h6>
+            <div class="about-para">
+                <p>
+                    Greetings, everyone my name is Pranav Puri. I am 20 years old, currently living in Delhi. I am pursuing my Bachelors in Computer Science from SRM University.I love technology and believe that scientific and technological advancement is required for the country's development. I love coding and my field of expertise include python, C and C++. The world of gaming amuses me a lot. In my free times, I listen to music, watch movies and hang out with friends.
+                </p>
             </div>
-            <div class="col m9">
-                <h5><strong>PRANAV PURI</strong></h5>
-                <h6><strong>WEB & UI/UX DESIGNER</strong></h6>
-
-                <div class="about-para">
-                    <p>
-                        Greetings, everyone my name is Pranav Puri. I am 20 years old, currently living in Delhi.
-                        I am pursuing my Bachelors in Computer Science from SRM University.I love technology and believe that scientific and technological advancement is required for the country's development. I love coding and my field of expertise include python, C and C++. The world of gaming amuses me a lot. In my free times, I listen to music, watch movies and hang out with friends.
-                    </p>
-                </div>
-                <div class="about-details">
-                    <p class="grey-text">
-
-                        <strong>Date Of Birth:</strong> 11 May 1995 <br>
-                        <strong>Phone:</strong> +91 - 8860270019 <br>
-                        <strong>Email:</strong> pranavpuri.p@hotmail.com <br>
-                        <strong>Address:</strong>RZ-6, II<sup>nd</sup> Floor, Indra Park, Uttam Nagar, Near Tilak Pul,
-                        New Delhi-110059 <br>
-                        <strong>Website:</strong> www.kybrdbnd.in <br>
-
-                    </p>
-                </div>
+            <div class="about-details">
+                <p class="grey-text">
+                    <strong>Date Of Birth:</strong> 11 May 1995
+                    <br>
+                    <strong>Phone:</strong> +91 - 8860270019
+                    <br>
+                    <strong>Email:</strong> pranavpuri.p@hotmail.com
+                    <br>
+                    <strong>Address:</strong>RZ-6, II<sup>nd</sup> Floor, Indra Park, Uttam Nagar, Near Tilak Pul, New Delhi-110059
+                    <br>
+                    <strong>Website:</strong> www.kybrdbnd.in
+                    <br>
+                </p>
             </div>
         </div>
-        <div class="row">
-            <div class="col m12">
-                <h5><strong>WHAT I'M DOING</strong></h5>
-            </div>
-            <div class="col m4 s12 center">
-            
-                <div class="service">
-                    <div class="icon"><i class="fa fa-desktop fa-5x"></i>
-                    </div>
-                    <br>
-
-                    <p><strong>WEB & UX DESIGN</strong></p>
-               </div>
-            </div>
-            <div class="col m4 s12 center">
-                <div class="service">
-                    <div class="icon"><i class="fa fa-terminal fa-5x"></i>
-                    </div>
-                    <br>
-
-                    <p><strong>CODING</strong></p>
+    </div>
+    <div class="row">
+        <div class="col m12">
+            <h5><strong>WHAT I'M DOING</strong></h5>
+        </div>
+        <div class="col m4 s12 center">
+            <div class="service">
+                <div class="icon"><i class="fa fa-desktop fa-5x"></i>
                 </div>
-            </div>
-            <div class="col m4 s12 center">
-                <div class="service">
-                    <div class="icon"><i class="fa fa-graduation-cap fa-5x"></i>
-                    </div>
-                    <br>
-
-                    <p><strong>STUDYING</strong></p>
-                </div>
+                <br>
+                <p><strong>WEB & UX DESIGN</strong></p>
             </div>
         </div>
-    
+        <div class="col m4 s12 center">
+            <div class="service">
+                <div class="icon"><i class="fa fa-terminal fa-5x"></i>
+                </div>
+                <br>
+                <p><strong>CODING</strong></p>
+            </div>
+        </div>
+        <div class="col m4 s12 center">
+            <div class="service">
+                <div class="icon"><i class="fa fa-graduation-cap fa-5x"></i>
+                </div>
+                <br>
+                <p><strong>STUDYING</strong></p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col m12">
+            <h5><strong>HOBBIES</strong></h5>
+        </div>
+        <div class="col m3 s12 center">
+            <div class="service">
+                <div class="icon"><i class="fa fa-music fa-5x"></i>
+                </div>
+                <br>
+                <p><strong>LISTENING MUSIC</strong></p>
+            </div>
+        </div>
+        <div class="col m3 s12 center">
+            <div class="service">
+                <div class="icon"><i class="fa fa-gamepad fa-5x"></i>
+                </div>
+                <br>
+                <p><strong>PLAYING GAMES</strong></p>
+            </div>
+        </div>
+        <div class="col m3 s12 center">
+            <div class="service">
+                <div class="icon"><i class="fa fa-book fa-5x"></i>
+                </div>
+                <br>
+                <p><strong>READING BOOKS</strong></p>
+            </div>
+        </div>
+         <div class="col m3 s12 center">
+            <div class="service">
+                <div class="icon"><i class="fa fa-film fa-5x"></i>
+                </div>
+                <br>
+                <p><strong>WATCHING MOVIES</strong></p>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}

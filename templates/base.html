@@ -27,7 +27,7 @@
                     <li><a href="{% url 'home' %}"><i class="material-icons left">home</i>Home</a></li>
                     <li><a href="{% url 'about' %}"><i class="material-icons left">account_box</i>About</a></li>
                     <li><a href="{% url 'skills' %}"><i class="material-icons left">grade</i>Skills</a></li>
-                    <li><a href="{% url 'education' %}"><i class="material-icons left">account_balance</i>Education</a></li>
+                    <!-- <li><a href="{% url 'education' %}"><i class="material-icons left">account_balance</i>Education</a></li> -->
                     <li><a href="{% url 'work' %}"><i class="material-icons left">work</i>Work</a></li>
                     <li><a href="{% url 'contact' %}"><i class="material-icons left">contacts</i>Contact</a></li>
                 </ul>
@@ -35,7 +35,7 @@
                     <li><a href="{% url 'home' %}"><i class="material-icons left">home</i>Home</a></li>
                     <li><a href="{% url 'about' %}"><i class="material-icons left">account_box</i>About</a></li>
                     <li><a href="{% url 'skills' %}"><i class="material-icons left">grade</i>Skills</a></li>
-                    <li><a href="{% url 'education' %}"><i class="material-icons left">account_balance</i>Education</a></li>
+                    <!-- <li><a href="{% url 'education' %}"><i class="material-icons left">account_balance</i>Education</a></li> -->
                     <li><a href="{% url 'work' %}"><i class="material-icons left">work</i>Work</a></li>
                     <li><a href="{% url 'contact' %}"><i class="material-icons left">contacts</i>Contact</a></li>
                 </ul>
@@ -45,6 +45,8 @@
 </header>
 <main>
     {% block content %}
+        {% block template_messages %}
+        {% endblock %}
     {% endblock %}
 </main>
 <footer class="page-footer  deep-purple darken-1">
@@ -61,10 +63,14 @@
                 <h5 class="white-text">Connect</h5>
 
                 <div class="social-icons">
-                    <a class="social-icon" href="#"><i class="fa fa-facebook"></i></a>
-                    <a class="social-icon" href="#"><i class="fa fa-twitter"></i></a>
-                    <a class="social-icon" href="#"><i class="fa fa-google-plus"></i></a>
-                    <a class="social-icon" href="#"><i class="fa fa-github"></i></a>
+                    <a class="social-icon" href="https://www.facebook.com/profile.php?id=100004364520915"
+                       target="__blank"><i class="fa fa-facebook"></i></a>
+                    <a class="social-icon" href="https://www.facebook.com/profile.php?id=100004364520915"
+                       target="__blank"><i class="fa fa-twitter"></i></a>
+                    <a class="social-icon" href="https://plus.google.com/u/0/+PranavPurikybrdbnd" target="__blank"><i
+                            class="fa fa-google-plus"></i></a>
+                    <a class="social-icon" href="https://github.com/kybrdbnd" target="__blank"><i
+                            class="fa fa-github"></i></a>
                 </div>
             </div>
             <div class="col m4 s12 center">

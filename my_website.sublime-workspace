@@ -4,6 +4,34 @@
 		"selected_items":
 		[
 			[
+				"EMAIL",
+				"EMAIL_HOST_PASSWORD"
+			],
+			[
+				"EMA",
+				"EMAIL_PORT"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"d",
+				"direction"
+			],
+			[
+				"bl",
+				"inline-block"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"padding-",
+				"padding-left"
+			],
+			[
 				"pos",
 				"position"
 			],
@@ -136,29 +164,26 @@
 	"buffers":
 	[
 		{
-			"contents": "/*base page */\n.social-icons {\n    margin-bottom: 10px;\n}\n\n.social-icon {\n    border-radius: 100%;\n    display: inline-block;\n    color: white;\n    font-size: 16px;\n    height: 42px;\n    line-height: 42px;\n    margin: 0 4px;\n    text-align: center;\n    width: 42px;\n}\n\n/*footer*/\nbody {\n    display: flex;\n    min-height: 100vh;\n    flex-direction: column;\n}\n\nmain {\n    flex: 1 0 auto;\n}\n\n/*home page*/\n.clearfix{\n    margin: 75px;\n}\n.profile-pic{\n    margin-top: 20px;\n    margin-left: -50px;\n}\nsup {\n    top: -0.5em;\n    font-size: 75%;\n}\n\n/*about page */\n#about_me{\n    height: 150px;\n    width: 200px;\n}\n\n.about-details{\n    line-height: 30px;\n}\n\n\n/*skill page*/\n\n.progress-bar span {\n    background: #fff none repeat scroll 0 0;\n    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);\n    color: #000;\n    display: block;\n    font-weight: 400;\n    height: 40px;\n    line-height: 40px;\n    position: absolute;\n    right: -20px;\n    text-align: center;\n    top: -16px;\n    width: 40px;\n}\n\n\n/*education page*/",
-			"file": "static/static_dirs/css/main.css",
-			"file_size": 1176,
-			"file_write_time": 131046732791572300,
+			"file": "myself/settings.py",
 			"settings":
 			{
-				"buffer_size": 1002,
-				"line_ending": "Windows"
+				"buffer_size": 3002,
+				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "templates/home.html",
+			"file": "/D/Projects/csi_website/src/layout/views.py",
 			"settings":
 			{
-				"buffer_size": 2075,
-				"line_ending": "Windows"
+				"buffer_size": 1418,
+				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "portfolio/forms.py",
+			"file": "/D/Projects/csi_website/src/csi_website/settings_old.py",
 			"settings":
 			{
-				"buffer_size": 853,
+				"buffer_size": 3063,
 				"line_ending": "Windows"
 			}
 		}
@@ -217,6 +242,7 @@
 	"expanded_folders":
 	[
 		"/D/Projects/myself",
+		"/D/Projects/myself/myself",
 		"/D/Projects/myself/portfolio",
 		"/D/Projects/myself/static",
 		"/D/Projects/myself/static/static_dirs",
@@ -225,15 +251,17 @@
 	],
 	"file_history":
 	[
-		"/D/Projects/myself/templates/base.html",
-		"/D/Projects/myself/templates/education.html",
-		"/D/Projects/myself/templates/work.html",
-		"/D/Projects/myself/templates/about.html",
-		"/D/Projects/myself/myself/urls.py",
 		"/D/Projects/myself/portfolio/views.py",
-		"/D/Projects/myself/templates/skill.html",
-		"/D/Projects/myself/templates/contact.html",
+		"/D/Projects/myself/templates/base.html",
 		"/D/Projects/myself/portfolio/forms.py",
+		"/D/Projects/myself/templates/about.html",
+		"/D/Projects/myself/templates/work.html",
+		"/D/Projects/myself/static/static_dirs/css/main.css",
+		"/D/Projects/myself/templates/contact.html",
+		"/D/Projects/myself/templates/home.html",
+		"/D/Projects/myself/templates/education.html",
+		"/D/Projects/myself/templates/skill.html",
+		"/D/Projects/myself/myself/urls.py",
 		"/D/Projects/csi_website/src/templates/forms.html",
 		"/D/Projects/csi_website/src/layout/forms.py",
 		"/D/Projects/rashi/twitter_streaming.py",
@@ -317,24 +345,24 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "static/static_dirs/css/main.css",
+					"file": "myself/settings.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1002,
+						"buffer_size": 3002,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1002,
-								1002
+								2561,
+								2561
 							]
 						],
 						"settings":
@@ -342,21 +370,6 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
@@ -372,59 +385,74 @@
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
 								"bh_double_quote_close",
-								"bh_double_quote_content"
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
 							],
 							"color_scheme": "Packages/User/Color Highlighter/themes/OneDark (SL).tmTheme",
-							"syntax": "Packages/Djaneiro/Syntaxes/CSS (Django).tmLanguage",
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1441.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "templates/home.html",
+					"file": "/D/Projects/csi_website/src/layout/views.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2075,
+						"buffer_size": 1418,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2045,
-								2045
+								404,
+								404
 							]
 						],
 						"settings":
@@ -432,21 +460,6 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
@@ -462,39 +475,51 @@
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
 								"bh_double_quote_close",
-								"bh_double_quote_content"
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
 							],
-							"color_scheme": "Packages/User/Color Highlighter/themes/OneDark (SL).tmTheme",
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
 						},
-						"translation.x": 0.0,
-						"translation.y": 379.0,
+						"translation.x": -0.0,
+						"translation.y": 54.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -502,19 +527,19 @@
 				},
 				{
 					"buffer": 2,
-					"file": "portfolio/forms.py",
+					"file": "/D/Projects/csi_website/src/csi_website/settings_old.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 853,
+						"buffer_size": 3063,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								728,
-								728
+								941,
+								941
 							]
 						],
 						"settings":
@@ -522,21 +547,6 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
@@ -552,40 +562,56 @@
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
 								"bh_double_quote_close",
-								"bh_double_quote_content"
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
 							],
-							"color_scheme": "Packages/User/Color Highlighter/themes/OneDark (SL).tmTheme",
-							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.x": -0.0,
+						"translation.y": 216.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]

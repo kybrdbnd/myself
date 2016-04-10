@@ -1,70 +1,100 @@
-{% extends 'base.html' %} {% load staticfiles %} {% block head_title %}Home{% endblock %} {% block content %}
-<div class="container">
-    <div class="clearfix"></div>
-    <div class="row">
-        <div class="col s12 m4">
-            <div class="card-panel">
-                <img src="{% static 'img/pp.jpg' %}" class="hoverable responsive-img">
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block head_title %}Home{% endblock %}
+
+{% block content %}
+    <div class="container">
+        {% block template_messages %}
+            {% if messages %}
+                <ul class="messages">
+                    {% for message in messages %}
+                        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>
+                            {% block message_js %}
+                               <h4>{{ message }}</h4>
+                            {% endblock %}
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        {% endblock %}
+        <div class="clearfix"></div>
+        <div class="row">
+            <div class="col s12 m4">
+                <div class="card-panel">
+                    <img src="{% static 'img/pp.jpg' %}" class="hoverable responsive-img">
+                </div>
             </div>
-        </div>
-        <div class="col s12 m8">
-            <div class="home-content">
-                <h3>DESIGN<sup>+</sup> DEVELOP<sup>+</sup> <br>INTERACTIVE<sup>+</sup> ART<sup>+</sup></h3> Hello, I'm Pranav Puri. I Have 2 years of experience in Web and UX design.
-                <br> I am currently doing bachelors in Computer Science Engineering from SRM University.
-                <div class="row">
-                    <div class="col m6 s12">
-                        <p>
-                            <a class="deep-purple lighten-1 waves-effect waves-light btn">
-                                Download CV
-                            </a>
-                        </p>
-                    </div>
-                    <div class="col m6 s12">
-                        <p>
-                            <a class="deep-purple lighten-1 waves-effect waves-light btn modal-trigger" href="#modal1">
-                                Hire Me Now
-                            </a>
-                        </p>
-                    </div>
-                    <div id="modal1" class="modal bottom-sheet">
-                        <div class="modal-content">
-                            <form action="" method="post">{% csrf_token %}
-                                <div class="input-field col m6">
-                                    <i class="material-icons prefix">account_circle</i> {{ form.full_name }}
-                                    <label for="full_name">First Name</label>
-                                    {% if form.full_name.errors %} {% for error in form.full_name.errors %}
-                                    <li>{{ error|escape }}</li>
+            <div class="col s12 m8">
+                <div class="home-content">
+                    <h3>DESIGN<sup>+</sup> DEVELOP<sup>+</sup> <br>INTERACTIVE<sup>+</sup> ART<sup>+</sup></h3> Hello,
+                    I'm
+                    Pranav Puri. I Have 2 years of experience in Web and UX design.
+                    <br> I am currently doing bachelors in Computer Science Engineering from SRM University.
+                    <div class="row">
+                        <div class="col m6 s12">
+                            <p>
+                                <a class="deep-purple lighten-1 waves-effect waves-light btn">
+                                    Download CV
+                                </a>
+                            </p>
+                        </div>
+                        <div class="col m6 s12">
+                            <p>
+                                <a class="deep-purple lighten-1 waves-effect waves-light btn modal-trigger"
+                                   href="#modal1">
+                                    Hire Me Now
+                                </a>
+                            </p>
+                        </div>
+                        <div id="modal1" class="modal bottom-sheet">
+                            <div class="modal-content">
+                                <form action="" method="post">{% csrf_token %}
+                                    <div class="input-field col m6 s12">
+                                        <i class="material-icons prefix">account_circle</i> {{ form.full_name }}
+                                        <label for="full_name">Full Name</label>
+                                        {% if form.full_name.errors %} {% for error in form.full_name.errors %}
+                                            <li>{{ error|escape }}</li>
+                                        {% endfor %} {% endif %}
+                                    </div>
+                                    <div class="input-field col m6 s12">
+                                        <i class="material-icons prefix">phone</i> {{ form.phone }}
+                                        <label for="phone">Phone No.</label>
+                                    </div>
+                                    <div class="input-field col m12 s12">
+                                        <i class="material-icons prefix">email</i>
+                                        <label for="email">Email</label>
+                                        {{ form.email }} {% if form.email.errors %} {% for error in form.email.errors %}
+                                        <li>{{ error|escape }}</li>
                                     {% endfor %} {% endif %}
-                                </div>
-                                <div class="input-field col m12">
-                                    <i class="material-icons prefix">email</i>
-                                    <label for="email">Email</label>
-                                    {{ form.email }} {% if form.email.errors %} {% for error in form.email.errors %}
-                                    <li>{{ error|escape }}</li>
-                                    {% endfor %} {% endif %}
-                                </div>
-                                <div class="input-field col m12">
-                                    <i class="material-icons prefix">mode_edit</i>
-                                    <label for="message">Message</label>
-                                    {{ form.message }} {% if form.message.errors %} {% for error in form.message.errors %}
-                                    <li>{{ error|escape }}</li>
-                                    {% endfor %} {% endif %}
-                                </div>
-                                <button class="btn waves-effect waves-light" type="submit" name="action">SEND MESSAGE
-                                    <i class="material-icons right">send</i>
-                                </button>
-                            </form>
+                                    </div>
+                                    <div class="input-field col m12 s12">
+                                        <i class="material-icons prefix">mode_edit</i>
+                                        <label for="message">Message</label>
+                                        {{ form.message }} {% if form.message.errors %}
+                                        {% for error in form.message.errors %}
+                                            <li>{{ error|escape }}</li>
+                                        {% endfor %} {% endif %}
+                                    </div>
+                                    <div class="col m12 s12 right-align">
+                                        <button class="deep-purple lighten-1 btn waves-effect waves-light" type="submit"
+                                                name="action">SEND MESSAGE
+                                            <i class="material-icons right">send</i>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    {% endblock %} {% block extra_js %}
+{% endblock %}
+{% block extra_js %}
     <script>
-    $(document).ready(function() {
-        // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-        $('.modal-trigger').leanModal();
-    });
+        $(document).ready(function () {
+            // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+            $('.modal-trigger').leanModal();
+        });
     </script>
-    {% endblock %}
+{% endblock %}
