@@ -1,5 +1,9 @@
 /*base page */
 
+html {
+    font-weight: 300;
+}
+
 nav .brand-logo {
     padding-left: 10px;
 }
@@ -58,14 +62,30 @@ sup {
 
 /*about page */
 
-#about_me {
-    height: 150px;
-    width: 200px;
+.about-para {
+    line-height: 23px;
 }
 
 .about-details {
     line-height: 30px;
 }
+
+.service {
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    color: #232323;
+    margin-bottom: 20px;
+    padding: 40px 0;
+    text-align: center;
+    transition: all 0.25s ease 0s;
+}
+
+.service:hover {
+    background: #5E35B1 none repeat scroll 0 0;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+
 
 
 /*skill page*/
