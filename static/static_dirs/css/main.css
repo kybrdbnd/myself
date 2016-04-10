@@ -1,12 +1,18 @@
 /*base page */
+
+nav .brand-logo {
+    padding-left: 10px;
+}
+
 .social-icons {
     margin-bottom: 10px;
 }
 
 .social-icon {
+    background: white;
     border-radius: 100%;
     display: inline-block;
-    color: white;
+    color: #4F4D54;
     font-size: 16px;
     height: 42px;
     line-height: 42px;
@@ -15,7 +21,14 @@
     width: 42px;
 }
 
+.social-icon:hover {
+    background: #5E35B1;
+    color: white;
+}
+
+
 /*footer*/
+
 body {
     display: flex;
     min-height: 100vh;
@@ -26,26 +39,31 @@ main {
     flex: 1 0 auto;
 }
 
+
 /*home page*/
-.clearfix{
+
+.clearfix {
     margin: 75px;
 }
-.profile-pic{
-    margin-top: 20px;
-    margin-left: -50px;
+
+.home-content {
+    padding-left: 20px;
 }
+
 sup {
     top: -0.5em;
     font-size: 75%;
 }
 
+
 /*about page */
-#about_me{
+
+#about_me {
     height: 150px;
     width: 200px;
 }
 
-.about-details{
+.about-details {
     line-height: 30px;
 }
 
@@ -69,8 +87,3 @@ sup {
 
 
 /*education page*/
-.card-panel :nth-child(2n) {
-    /*position: absolute;*/
-    top: -50px;
-    /*bottom: -132px;*/
-}
