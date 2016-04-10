@@ -1,0 +1,237 @@
+/*base page */
+
+html {
+    font-weight: 300;
+}
+
+nav .brand-logo {
+    padding-left: 10px;
+}
+
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.social-icon {
+    background: white;
+    border-radius: 100%;
+    display: inline-block;
+    color: #4F4D54;
+    font-size: 16px;
+    height: 42px;
+    line-height: 42px;
+    margin: 0 4px;
+    text-align: center;
+    width: 42px;
+    margin-bottom: 15px;
+}
+
+.social-icon:hover {
+    background: #5E35B1;
+    color: white;
+}
+
+
+/*footer*/
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/*main {
+    flex: 1 0 auto;
+}*/
+
+
+/*home page*/
+
+.clearfix {
+    margin: 75px;
+}
+
+.home-content {
+    padding-left: 20px;
+}
+
+sup {
+    top: -0.5em;
+    font-size: 75%;
+}
+
+
+/*about page */
+
+.about-para {
+    line-height: 23px;
+}
+
+.about-details {
+    line-height: 30px;
+}
+
+.service {
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    color: #232323;
+    margin-bottom: 20px;
+    padding: 40px 0;
+    text-align: center;
+    transition: all 0.25s ease 0s;
+}
+
+.service:hover {
+    background: #5E35B1 none repeat scroll 0 0;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+
+
+/*skill page*/
+
+.list-icons {
+    line-height: 50px;
+}
+
+.list-icons > li > i {
+    color: #7E57C2;
+    padding-right: 10px;
+}
+
+.list-icons > li {
+    color: #232323;
+}
+
+#english_circle strong {
+    font-size: 30px;
+}
+
+#german_circle strong {
+    font-size: 30px;
+}
+
+.progress-bar-info {
+    background-color: #7e57c2 !important;
+}
+
+
+/*education page*/
+
+.experience-block .line {
+    border-left: 2px dashed #4d4d4d;
+    display: block;
+    height: 100%;
+    left: 30%;
+    /*top:150px;*/
+    position: absolute;
+    width: 2px;
+}
+
+.experience-block .icon {
+    background: #fff none repeat scroll 0 0;
+    border: 5px solid #e5e5e5;
+    border-radius: 100%;
+    color: #000;
+    display: block;
+    font-size: 36px;
+    height: 78px;
+    left: 30%;
+    line-height: 78px;
+    margin-left: -39px;
+    position: absolute;
+    text-align: center;
+    /*top: 0;*/
+    width: 78px;
+    z-index: 2;
+}
+
+.experience-block .content::after {
+    border-color: transparent #fff transparent transparent;
+    border-style: solid;
+    border-width: 0 10px 13px 0;
+    content: "";
+    height: 0;
+    left: -10px;
+    position: absolute;
+    top: 0;
+    width: 0;
+}
+
+.experience-block .content {
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    float: right;
+    margin-top: 39px;
+    padding: 20px 30px;
+    position: relative;
+    width: 60%;
+}
+
+
+/*work page*/
+
+.project-description {
+    line-height: 30px;
+}
+
+
+/*contact page*/
+
+.list-icons > li {
+    position: relative;
+}
+
+.list-unstyled li {
+    margin-bottom: 12px;
+}
+
+.input-field label {
+    color: #5E35B1;
+}
+
+.input-field input[type=text]:focus + label {
+    color: #5E35B1;
+}
+
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #5E35B1;
+    box-shadow: 0 1px 0 0 #5E35B1;
+}
+
+.input-field input[type=text].valid {
+    border-bottom: 1px solid #5E35B1;
+    box-shadow: 0 1px 0 0 #5E35B1;
+}
+
+.input-field input[type=text].invalid {
+    border-bottom: 1px solid #5E35B1;
+    box-shadow: 0 1px 0 0 #5E35B1;
+}
+
+.input-field .prefix.active {
+    color: #5E35B1;
+}
+
+.social-icons-2 {
+    margin-bottom: 10px;
+}
+
+.social-icon-2 {
+    background: #7E57C2;
+    border-radius: 100%;
+    display: inline-block;
+    color: white;
+    font-size: 16px;
+    height: 42px;
+    line-height: 42px;
+    margin: 0 10px;
+    text-align: center;
+    width: 42px;
+    margin-bottom: 10px;
+}
+
+.social-icon-2:hover {
+    background: white;
+    color: #5E35B1;
+}
