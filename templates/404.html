@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="row">
+        <div class="col m12 s12">
+            <h2>Sorry, the page you requested doesn't exist</h2>
+
+            <div class="col m12 s12 center"></div>
+            <a class="deep-purple lighten-1 waves-effect waves-light btn modal-trigger"
+               href="{% url 'home' %}">
+                CLick here to go Home
+            </a>
+        </div>
+    </div>
+{% endblock %}
