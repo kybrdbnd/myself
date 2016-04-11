@@ -1,4 +1,3 @@
-import os
 from django.conf import settings
 import dj_database_url
 

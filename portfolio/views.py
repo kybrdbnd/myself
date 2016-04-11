@@ -28,7 +28,7 @@ def home(request):
                       mail_message,
                       from_email,
                       to_email,
-                      fail_silently=False)
+                      fail_silently=True)
             for key, value in form.cleaned_data.items():
                 print(key, value)
             messages.success(request, 'Mail send successfully')
@@ -78,7 +78,7 @@ def contact(request):
                       mail_message,
                       from_email,
                       to_email,
-                      fail_silently=False)
+                      fail_silently=True)
             for key, value in form.cleaned_data.items():
                 print(key, value)
             messages.success(request, 'Mail send successfully')
